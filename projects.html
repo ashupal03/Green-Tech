@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Projects | Green Technology Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center flex-wrap">
+            <!-- Logo -->
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="text-2xl font-bold text-emerald-600 rounded-lg p-2 transition-transform transform hover:scale-105">Green Tech</a>
+                <div class="flex items-center space-x-2 border rounded-full p-1 bg-gray-100">
+                    <select id="language-selector" class="p-1 bg-transparent text-sm focus:outline-none focus:ring-0">
+                        <!-- Options populated by JS -->
+                    </select>
+                </div>
+            </div>
+            
+            <!-- UPDATED Nav Links -->
+            <div id="nav-links" class="flex flex-wrap gap-4 mt-2 sm:mt-0">
+                <a href="index.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navHome">Home</a>
+                <a href="why-it-matters.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navWhy">Why It Matters</a>
+                <a href="blog.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navBlog">Blog</a>
+                <a href="map.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300">Map</a>
+                <a href="solutions.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300">Solutions</a>
+                <!-- NEW Projects Link -->
+                <a href="projects.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navProjects">Projects</a>
+                <a href="sdg.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navSDG">Sustainability Goals</a>
+                <a href="calculator.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300">Calculator</a>
+                <a href="contact.html" class="nav-link px-4 py-2 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-full transition-colors duration-300">Get Involved</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4 sm:p-8">
+        <section id="projects" class="py-12 sm:py-16">
+            <h2 data-lang-key="projectsHeading" class="text-3xl font-bold text-center text-emerald-800 mb-4 hero-title-gradient">Student Innovation Showcase</h2>
+            <p data-lang-key="projectsSubheading" class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Exploring real-world green technology solutions built by our community.</p>
+            
+            <div class="space-y-12 max-w-5xl mx-auto">
+                
+                <!-- Project 1 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover border border-gray-100">
+                    <div class="md:flex">
+                        <!-- Video Section (Left/Top) -->
+                        <div class="md:w-1/2 aspect-video md:aspect-auto relative">
+                            <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/wOCbcAgLBO4?si=1dIVbuAM_ZHDTTAK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <!-- Content Section (Right/Bottom) -->
+                        <div class="p-8 md:w-1/2 flex flex-col justify-between">
+                            <div>
+                                <div class="uppercase tracking-wide text-sm text-emerald-600 font-bold mb-2">Green Construction </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3" data-lang-key="proj1Title">Green Roof System</h3>
+                                <p class="text-gray-600 mb-6" data-lang-key="proj1Desc">
+                                    A green roof or living roof is a cutting-edge sustainable building technology that incorporates plants and soil on top of a waterproofing system placed over traditional roofs. This report provides an overview of the concept, design and implementation of green roofs as a solution to contemporary urban environmental challenges.
+                                </p>
+                                
+                                <!-- Project Images (Gallery Style) -->
+                                <div class="grid grid-cols-2 gap-2 mb-6">
+                                    <img src="https://placehold.co/300x200/e2e8f0/64748b?text=Circuit+Design" class="rounded-lg object-cover h-24 w-full" alt="Circuit">
+                                    <img src="https://placehold.co/300x200/e2e8f0/64748b?text=Field+Test" class="rounded-lg object-cover h-24 w-full" alt="Field Test">
+                                </div>
+                            </div>
+                            
+                            <a href="https://drive.google.com/file/d/1cUGachny180dNdQW-3EIJGjGMuxJCVMn/view?usp=drive_link" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-emerald-600 hover:bg-emerald-700 transition-colors duration-300 w-full sm:w-auto">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                <span data-lang-key="viewReportBtn">View Project Report</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover border border-gray-100">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 aspect-video md:aspect-auto relative order-1 md:order-2">
+                            <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/rj453_S7XAU?si=4jHsoMQ3ochiXBQJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-8 md:w-1/2 flex flex-col justify-between order-2 md:order-1">
+                            <div>
+                                <div class="uppercase tracking-wide text-sm text-yellow-600 font-bold mb-2">Web Dev</div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3" data-lang-key="proj2Title">E-ASHA: A Digital Healthcare Support System for ASHA Workers</h3>
+                                <p class="text-gray-600 mb-6" data-lang-key="proj2Desc">
+                                E-ASHA is a digital healthcare support system designed to simplify and modernize the daily work
+of Accredited Social Health Activists (ASHA) in rural and semi-urban communities. ASHA
+workers play a crucial role in India’s public health system, yet they often face challenges such as
+managing patient data manually, limited access to medical information, difficulty in tracking
+patient history, and lack of real-time decision support. To address these challenges, E-ASHA
+integrates technology with community healthcare to create a smart, user-friendly, and efficient
+platform.
+                                </p>
+                                <div class="grid grid-cols-2 gap-2 mb-6">
+                                    <img src="https://placehold.co/300x200/e2e8f0/64748b?text=Solar+Panel" class="rounded-lg object-cover h-24 w-full" alt="Panel">
+                                    <img src="https://placehold.co/300x200/e2e8f0/64748b?text=Prototype" class="rounded-lg object-cover h-24 w-full" alt="Prototype">
+                                </div>
+                            </div>
+                            <a href="https://drive.google.com/file/d/10VMYNUSIQZkCrg3amDc--FC2LTLH31fN/view?usp=drive_link" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-emerald-600 hover:bg-emerald-700 transition-colors duration-300 w-full sm:w-auto">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                <span data-lang-key="viewReportBtn">View Project Report</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover border border-gray-100">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 aspect-video md:aspect-auto relative">
+                            <img src="https://lh3.googleusercontent.com/d/1VSHgd3P1GFD7FJYTXxCw5-uvGTwr8CQN" alt="Description of image" class="w-full h-80 object-cover">
+                        </div>
+                        <div class="p-8 md:w-1/2 flex flex-col justify-between">
+                            <div>
+                                <div class="uppercase tracking-wide text-sm text-blue-600 font-bold mb-2">IoT & Construction</div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3" data-lang-key="proj3Title"> Sustainable Roadside Vacuum Tube System</h3>
+                                <p class="text-gray-600 mb-6" data-lang-key="proj3Desc">
+                                    
+                                </p>
+                                <div class="grid grid-cols-2 gap-2 mb-6">
+                                    <img src="https://placehold.co/300x200/e2e8f0/64748b?text=IoT+Logic" class="rounded-lg object-cover h-24 w-full" alt="Code">
+                                    <img src="https://placehold.co/300x200/e2e8f0/64748b?text=Construction+IoT" class="rounded-lg object-cover h-24 w-full" alt="Code">
+                                </div>
+                            </div>
+                            <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-emerald-600 hover:bg-emerald-700 transition-colors duration-300 w-full sm:w-auto">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                <span data-lang-key="viewReportBtn">View Project Report</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover border border-gray-100">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 aspect-video md:aspect-auto relative">
+                            <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/oe_gZWAelgU?si=ZbKjuMdCbcwnjyDC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-8 md:w-1/2 flex flex-col justify-between">
+                            <div>
+                                <div class="uppercase tracking-wide text-sm text-blue-600 font-bold mb-2">Robotics & Waste</div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3" data-lang-key="proj3Title">Remote-Control River Cleaning</h3>
+                                <p class="text-gray-600 mb-6" data-lang-key="proj3Desc">
+                                    To overcome these challenges, a Remote-Control River Cleaning Boat has been developed.
+This innovative system is designed to clean floating waste from the surface of water bodies
+efficiently and safely. The boat is equipped with a conveyor mechanism that collects
+floating debris and deposits it into a storage container.
+                                </p>
+                                <div class="grid grid-cols-2 gap-2 mb-6">
+                                    <img src="https://lh3.googleusercontent.com/d/15LcLsp7vSamIA3-PUyrtBL-DzzXHo6X9" alt="Project Image" class="rounded-lg object-cover h-24 w-full">
+                                    <img src="https://lh3.googleusercontent.com/d/1E6ml6fhkhkiuPRfCjonPFdBV4xqDoyBz" class="rounded-lg object-cover h-24 w-full" alt="Code">
+                                </div>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1Z6SywuOCV-R-QlmOds47-Vy7msGey0Tq/view?usp=sharing" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-emerald-600 hover:bg-emerald-700 transition-colors duration-300 w-full sm:w-auto">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                <span data-lang-key="viewReportBtn">View Project Report</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-8 rounded-t-3xl">
+        <div class="container mx-auto text-center">
+            <p data-lang-key="footerText" class="text-sm">&copy; 2023 Green Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

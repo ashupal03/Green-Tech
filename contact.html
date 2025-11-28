@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved | Green Technology Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class=" text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center flex-wrap">
+            <!-- Logo and Language on the LEFT -->
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="text-2xl font-bold text-emerald-600 rounded-lg p-2 transition-transform transform hover:scale-105">Green Tech</a>
+                <div class="flex items-center space-x-2 border rounded-full p-1 bg-gray-100">
+                    <select id="language-selector" class="p-1 bg-transparent text-sm focus:outline-none focus:ring-0">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Nav Links on the RIGHT (Added Sustainability Goals) -->
+            <div id="nav-links" class="flex flex-wrap gap-4 mt-2 sm:mt-0">
+                <a href="index.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navHome">Home</a>
+                <a href="why-it-matters.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navWhy">Why It Matters</a>
+                <a href="blog.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navBlog">Blog</a>
+                <a href="map.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300">Map</a>
+                <a href="solutions.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300">Solutions</a>
+                <!-- NEW Projects Link -->
+                <a href="projects.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navProjects">Projects</a>
+                <a href="sdg.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navSDG">Sustainability Goals</a>
+                <a href="calculator.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300">Calculator</a>
+                <a href="contact.html" class="nav-link px-4 py-2 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-full transition-colors duration-300">Get Involved</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4 sm:p-8">
+
+        <!-- Page: Contact / Get Involved -->
+        <div id="page-contact" class="page-content">
+            <!-- Subscribe Section -->
+            <section id="contact" class="py-12 sm:py-16 text-center">
+                <h2 data-lang-key="contactHeading" class="text-3xl font-bold text-emerald-800 mb-4 hero-title-gradient">Join the Movement</h2>
+                <p data-lang-key="contactSubheading" class="text-lg text-gray-700 max-w-xl mx-auto">
+                    Ready to make a difference? Get regular updates and tips on sustainability and green technology.
+                </p>
+                <form class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <input type="email" placeholder="Enter your email" class="px-6 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all duration-300 w-full sm:w-80" />
+                    <button data-lang-key="subscribeBtn" type="submit" class="w-full sm:w-auto px-8 py-3 bg-emerald-600 text-white font-bold rounded-full shadow-lg hover:bg-emerald-700 transition-colors duration-300 transform hover:scale-105">
+                        Subscribe Now
+                    </button>
+                </form>
+            </section>
+
+            <!-- More Ways to Get Involved -->
+            <section id="involved" class="py-12 sm:py-16">
+                <h2 data-lang-key="involvedHeading" class="text-3xl font-bold text-center text-emerald-800 mb-12 hero-title-gradient">More Ways to Get Involved</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    
+                    <!-- Card 1: Support Orgs -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                        <h3 data-lang-key="involvedNGOsTitle" class="text-xl font-bold text-emerald-700 mb-4">Support Organizations</h3>
+                        <p data-lang-key="involvedNGOsText" class="text-gray-600 mb-4">
+                            Donate or volunteer with organizations making a real impact in India.
+                        </p>
+                        <ul class="space-y-2">
+                            <li><a href="https://www.cseindia.org/" target="_blank" class="text-emerald-600 hover:text-emerald-800 transition-colors duration-300">Centre for Science and Environment (CSE)</a></li>
+                            <li><a href="https://greenpeace.in/" target="_blank" class="text-emerald-600 hover:text-emerald-800 transition-colors duration-300">Greenpeace India</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2: Gov Resources -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                        <h3 data-lang-key="involvedGovTitle" class="text-xl font-bold text-emerald-700 mb-4">Government Resources</h3>
+                        <p data-lang-key="involvedGovText" class="text-gray-600 mb-4">
+                            Learn about national initiatives, policies, and subsidies for green energy.
+                        </p>
+                        <ul class="space-y-2">
+                            <li><a href="https://mnre.gov.in/" target="_blank" class="text-emerald-600 hover:text-emerald-800 transition-colors duration-300">Ministry of New & Renewable Energy</a></li>
+                            <li><a href="https://beeindia.gov.in/" target="_blank" class="text-emerald-600 hover:text-emerald-800 transition-colors duration-300">Bureau of Energy Efficiency (BEE)</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3: Local Action -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                        <h3 data-lang-key="involvedActionTitle" class="text-xl font-bold text-emerald-700 mb-4">Take Local Action</h3>
+                        <p data-lang-key="involvedActionText" class="text-gray-600 mb-4">
+                            Small changes in your community can make a big difference.
+                        </p>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li data-lang-key="involvedAction1">Start a community compost bin.</li>
+                            <li data-lang-key="involvedAction2">Organize a local clean-up or tree-planting drive.</li>
+                            <li data-lang-key="involvedAction3">Advocate for better public transport.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-8 rounded-t-3xl">
+        <div class="container mx-auto text-center">
+            <p data-lang-key="footerText" class="text-sm">&copy; 2023 Green Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

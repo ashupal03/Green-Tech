@@ -1,0 +1,111 @@
+/* Set the custom font for the entire site */
+html {
+    scroll-behavior: smooth; /* For smooth scrolling on home page */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+        background-color: hsl(0, 0%, 100%); /* Light green using HSL */
+}
+
+
+/* Style for the interactive map container */
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Fixes layering issue with sticky header */
+    position: relative; /* Fixes layering issue with sticky header */
+}
+
+/* --- High-Level CSS Additions --- */
+
+/* 1. Gradient Hero Title */
+.hero-title-gradient {
+    background-image: linear-gradient(to right, #10b981, #047857);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* --- Animations --- */
+
+/* 1. Page Section Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in to all main content sections */
+main section {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* 2. Card Hover "Lift" Effect & Animation */
+.card-hover {
+    /* --- NEW --- Added a default shadow */
+    box-shadow: 0 4px 12px rgba(6, 218, 41, 0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Cards fade in slightly after the page title */
+    animation: fadeIn 0.5s ease-out 0.2s;
+    animation-fill-mode: backwards; /* Start invisible before animating */
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    /* --- NEW --- Enhanced the shadow on hover */
+    box-shadow: 0 12px 24px rgba(6, 218, 41, 0.9), 0 8px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 3. Button & Nav Link Transitions */
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+/* Add a subtle "up" motion on hover for non-active links */
+.nav-link:hover:not(.active) {
+    transform: translateY(-2px);
+    background-color: #0fdad3; /* Lighter green on hover */
+}
+
+.nav-link.active {
+    background-color: #09e42d85; /* A light green for active state */
+    color: #065f46; /* A dark green for active text */
+    font-weight: 800;
+}
+
+/* 4. Form Input Focus Animation */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add a green "glow" when a form element is clicked */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3);
+    border-color: #10b981;
+    outline: none;
+}
+
+/* 5. Button Hover Animation (already has scale) */
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    /* Add a glow effect to buttons */
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}

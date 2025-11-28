@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions | Green Technology Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center flex-wrap">
+            <!-- Logo and Language on the LEFT -->
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="text-2xl font-bold text-emerald-600 rounded-lg p-2 transition-transform transform hover:scale-105">Green Tech</a>
+                <div class="flex items-center space-x-2 border rounded-full p-1 bg-gray-100">
+                    <select id="language-selector" class="p-1 bg-transparent text-sm focus:outline-none focus:ring-0">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Nav Links on the RIGHT (Added Sustainability Goals) -->
+            <div id="nav-links" class="flex flex-wrap gap-4 mt-2 sm:mt-0">
+                <a href="index.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navHome">Home</a>
+                <a href="why-it-matters.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navWhy">Why It Matters</a>
+                <a href="blog.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navBlog">Blog</a>
+                <a href="map.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300">Map</a>
+                <a href="solutions.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300">Solutions</a>
+                <!-- NEW Projects Link -->
+                <a href="projects.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navProjects">Projects</a>
+                <a href="sdg.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300" data-lang-key="navSDG">Sustainability Goals</a>
+                <a href="calculator.html" class="nav-link px-4 py-2 text-sm font-semibold text-gray-700 hover:text-white hover:bg-emerald-500 rounded-full transition-colors duration-300">Calculator</a>
+                <a href="contact.html" class="nav-link px-4 py-2 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-full transition-colors duration-300">Get Involved</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4 sm:p-8">
+
+        <!-- Page: Solutions -->
+        <div id="page-solutions" class="page-content">
+            <section id="solutions" class="py-12 sm:py-16">
+                <h2 data-lang-key="solutionsHeading" class="text-3xl font-bold text-center text-emerald-800 mb-12 hero-title-gradient">Practical Solutions for a Greener Life</h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    
+                    <!-- Card 1: Renewable Energy -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                        <div class="aspect-video">
+                            <!-- FIX: Switched back to www.youtube.com for better compatibility -->
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/1kUE0BZtTRc" title="Renewable Energy Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 data-lang-key="solution1Title" class="text-xl font-bold text-center text-emerald-700">Renewable Energy</h3>
+                            <p data-lang-key="solution1Text" class="mt-4 text-center text-gray-600">
+                                Harness the power of solar, wind, and geothermal energy to reduce reliance on fossil fuels.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Sustainable Practices -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                        <div class="aspect-video">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/kZIrIQDf1nQ?si=k9-j0y2OAyarVZuN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 data-lang-key="solution2Title" class="text-xl font-bold text-center text-emerald-700">Sustainable Practices</h3>
+                            <p data-lang-key="solution2Text" class="mt-4 text-center text-gray-600">
+                                Adopt eco-friendly habits in your daily life, from recycling to reducing water consumption.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Smart Transportation -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                        <div class="aspect-video">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/OnjX0O9dPMc?si=cI9o4rKJ7Nku8rq_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 data-lang-key="solution3Title" class="text-xl font-bold text-center text-emerald-700">Smart Transportation</h3>
+                            <p data-lang-key="solution3Text" class="mt-4 text-center text-gray-600">
+                                Explore electric vehicles, cycling, and public transport to lower your transportation emissions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Waste Reduction -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                        <div class="aspect-video">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/OasbYWF4_S8" title="What Is The Zero Waste Lifestyle?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 data-lang-key="solution4Title" class="text-xl font-bold text-center text-emerald-700">Waste Reduction</h3>
+                            <p data-lang-key="solution4Text" class="mt-4 text-center text-gray-600">
+                                Learn about the "Zero Waste" movement, composting, and how to properly recycle materials.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Water Conservation -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                        <div class="aspect-video">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/j0yjZdCPOSQ?si=eI0N0KncaXlFJZgV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 data-lang-key="solution5Title" class="text-xl font-bold text-center text-emerald-700">Water Conservation</h3>
+                            <p data-lang-key="solution5Text" class="mt-4 text-center text-gray-600">
+                                Discover simple ways to save water at home, from fixing leaks to installing efficient appliances.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Green Building -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                        <div class="aspect-video">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/wmoy27EZ8y0?si=xFtbUNfHS9JS2i0u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 data-lang-key="solution6Title" class="text-xl font-bold text-center text-emerald-700">Green Building</h3>
+                            <p data-lang-key="solution6Text" class="mt-4 text-center text-gray-600">
+                                Explore how sustainable architecture uses green roofs, solar panels, and smart design.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-8 rounded-t-3xl">
+        <div class="container mx-auto text-center">
+            <p data-lang-key="footerText" class="text-sm">&copy; 2023 Green Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
